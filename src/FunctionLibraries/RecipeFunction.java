@@ -2,6 +2,8 @@ package FunctionLibraries;
 
 import ObjectRepository.CMWeb_MerchandisePage;
 import ObjectRepository.CMWeb_RecipePage;
+import Utility.Constant;
+import Utility.ExcelUtils;
 
 public class RecipeFunction {
 	
@@ -23,37 +25,37 @@ public class RecipeFunction {
 					// reporting
 			
 			//Input Merchandise Name
-			//	String sRecipeName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-				CMWeb_RecipePage.txtRecipeName().sendKeys("EGSTest_1228_Recipe");
+				String sRecipeName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+				CMWeb_RecipePage.txtRecipeName().sendKeys(sRecipeName);
 						// Reporting
 				
 				//input Number
 				if (CMWeb_RecipePage.txtNumber().isEnabled()) {
-			//		String sNumber = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Number);
-					CMWeb_RecipePage.txtNumber().sendKeys("RCP12282020");
+					String sNumber = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Number);
+					CMWeb_RecipePage.txtNumber().sendKeys(sNumber);
 				} else {
 					// report
 				}
 				
 			//select category
-				//String sCategory = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Category);
-				CMWeb_RecipePage.drpdownCategory().sendKeys("EGS");
+				String sCategory = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Category);
+				CMWeb_RecipePage.drpdownCategory().sendKeys(sCategory);
 							// Reporting	
 				
 			//select source
-				//String sSource = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Source);
-				CMWeb_RecipePage.drpdownSource().sendKeys("EGS");
+				String sSource = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Source);
+				CMWeb_RecipePage.drpdownSource().sendKeys(sSource);
 							// Reporting	
 				
 			//Input Yield
-				//	String sYield = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Yield);
+					String sYield = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Yield);
 					CMWeb_RecipePage.txtYield().clear();
-					CMWeb_RecipePage.txtYield().sendKeys("25");
+					CMWeb_RecipePage.txtYield().sendKeys(sYield);
 							// Reporting	
 					
 			//Select Yield
-				//	String sYield2 = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Yield2);
-					//CMWeb_RecipePage.drpdownYield().sendKeys("serving");
+					String sYield2 = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Yield2);
+					CMWeb_RecipePage.drpdownYield().sendKeys(sYield2);
 							// Reporting	
 					
 			//Click calculate
@@ -73,13 +75,13 @@ public class RecipeFunction {
 			CMWeb_RecipePage.btnIngredientProd().click();
 			
 			//search ingredient
-//			String sSearch = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_SearchName);
-			CMWeb_RecipePage.txtSearchIngredient().sendKeys("Pomelo");
+			String sSearch = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_SearchName);
+			CMWeb_RecipePage.txtSearchIngredient().sendKeys(sSearch);
 			CMWeb_RecipePage.btnSearch().click();
 			
 			//Enter Net Quantity
-//			String sNetQTY = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_NetQTY);
-			CMWeb_RecipePage.txtNetQty().sendKeys("15");
+			String sNetQTY = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_NetQTY);
+			CMWeb_RecipePage.txtNetQty().sendKeys(sNetQTY);
 			
 			// add ingredient
 			CMWeb_RecipePage.btnAddIngredient().click();
@@ -92,9 +94,9 @@ public class RecipeFunction {
 			CMWeb_RecipePage.btnNutrient().click();
 			
 			// input Imposed Nutrient
-//			String sNutrient = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_ImposedNutrient);
+			String sNutrient = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_ImposedNutrient);
 			CMWeb_RecipePage.txtImposedNutrient().clear();
-			CMWeb_RecipePage.txtImposedNutrient().sendKeys("10");
+			CMWeb_RecipePage.txtImposedNutrient().sendKeys(sNutrient);
 			
 		}
 		
@@ -114,8 +116,8 @@ public class RecipeFunction {
 			// click list button
 			CMWeb_RecipePage.btnList().click();
 		//	CMWeb_RecipePage.alertLeave().accept();
-		//	String sRecipeName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-			CMWeb_RecipePage.txtSearchMerch().sendKeys("EGSTest_1228_Recipe");
+			String sRecipeName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+			CMWeb_RecipePage.txtSearchMerch().sendKeys(sRecipeName);
 			CMWeb_RecipePage.btnSearchMerch().click();
 			
 		}

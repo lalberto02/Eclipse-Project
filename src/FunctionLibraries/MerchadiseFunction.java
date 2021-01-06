@@ -24,48 +24,48 @@ public class MerchadiseFunction {
 				// reporting
 		
 		//Input Merchandise Name
-	//	String sMerchName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-		CMWeb_MerchandisePage.txtMerchName().sendKeys("EGSTest_1218");
+		String sMerchName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+		CMWeb_MerchandisePage.txtMerchName().sendKeys(sMerchName);
 				// Reporting
 		
 		//input Number
 		if (CMWeb_MerchandisePage.txtNumber().isEnabled()) {
-	//		String sNumber = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Number);
-			CMWeb_MerchandisePage.txtNumber().sendKeys("MERCH12282020");
+			String sNumber = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Number);
+			CMWeb_MerchandisePage.txtNumber().sendKeys(sNumber);
 		} else {
 			// report
 		}
 		
 		//select brand
-	//	String sBrand = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Brand);
-		CMWeb_MerchandisePage.drpdownBrand().sendKeys("1Price (Saviva Food Services)");
+		String sBrand = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Brand);
+		CMWeb_MerchandisePage.drpdownBrand().sendKeys(sBrand);
 			// Reporting
 		
 		//select category
-	//	String sCategory = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Category);
-		CMWeb_MerchandisePage.drpdownCategory().sendKeys("01 Cat");
+		String sCategory = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Category);
+		CMWeb_MerchandisePage.drpdownCategory().sendKeys(sCategory);
 				// Reporting
 		
 		//select supplier
-	//	String sSupplier = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Supplier);
-		CMWeb_MerchandisePage.drpdownSupplier().sendKeys("001 Merch Supplier");
+		String sSupplier = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Supplier);
+		CMWeb_MerchandisePage.drpdownSupplier().sendKeys(sSupplier);
 		
 		//Input Wastage
-	//	String sWastage = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Wastage);
+		String sWastage = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Wastage);
 		CMWeb_MerchandisePage.txtWastage().clear();
-		CMWeb_MerchandisePage.txtWastage().sendKeys("5");
+		CMWeb_MerchandisePage.txtWastage().sendKeys(sWastage);
 		
 		//Click calculate
 		CMWeb_MerchandisePage.btnCalculate().click();
 		
 		//Input Price
-	//	String sPrice = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Price);
+		String sPrice = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Price);
 		CMWeb_MerchandisePage.txtPrice().clear();
-		CMWeb_MerchandisePage.txtPrice().sendKeys("15.72");
+		CMWeb_MerchandisePage.txtPrice().sendKeys(sPrice);
 		
 		//select Unit
-	//	String sUnit = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Unit);
-		CMWeb_MerchandisePage.drpdownUnit().sendKeys("kg");
+		String sUnit = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Unit);
+		CMWeb_MerchandisePage.drpdownUnit().sendKeys(sUnit);
 		
 		//Screenshot
 		
@@ -80,8 +80,8 @@ public class MerchadiseFunction {
 		
 		// Link Merchandise
 		CMWeb_MerchandisePage.btnLink().click();
-	//	String sSearch = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_SearchName);
-		CMWeb_MerchandisePage.txtSearchMerchNut().sendKeys("Aarebrot hell (Migros)");
+		String sSearch = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_SearchName);
+		CMWeb_MerchandisePage.txtSearchMerchNut().sendKeys(sSearch);
 		CMWeb_MerchandisePage.btnSearchNut().click();
 		CMWeb_MerchandisePage.linkMerchandise().click();
 		
@@ -132,10 +132,10 @@ public class MerchadiseFunction {
 	public static void PopulateInformationMerchandise(int iTestCaseRow) throws Exception{
 		
 		CMWeb_MerchandisePage.btnInformation().click();
-	//	String sIngredient = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Ingredient);
-		CMWeb_MerchandisePage.txtIngredient().sendKeys("EGSTest_1228_Ingredient");
-	//	String sDetermination = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Determination);
-		CMWeb_MerchandisePage.txtSpecification().sendKeys("EGSTest_1228_Specification");
+		String sIngredient = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Ingredient);
+		CMWeb_MerchandisePage.txtIngredient().sendKeys(sIngredient);
+		String sDetermination = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Determination);
+		CMWeb_MerchandisePage.txtSpecification().sendKeys(sDetermination);
 		 //validation reporting and screenshot
 		
 	}

@@ -1,26 +1,23 @@
 package FunctionLibraries;
-//import org.testng.Reporter;
 
-//import ObjectRepository.Home_Page;
 import ObjectRepository.CMWeb_LoginPage;
-//import Utility.Constant;
-//import Utility.ExcelUtils;
-//import Utility.Log;
-//import Utility.Utils;
+import Utility.Constant;
+import Utility.ExcelUtils;
+
 
 
 public class LoginFunction {
 	 public static void Execute(int iTestCaseRow) throws Exception{
 		
 		 // insert username
-		 //String sUserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_UserName);
-		 CMWeb_LoginPage.txtUserName().sendKeys("admin");
+		 String sUserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_UserName);
+		 CMWeb_LoginPage.txtUserName().sendKeys(sUserName);
 		 // reporting
 		 //Log.info("Admin is entered in UserName text box" );
 		 
 		 // insert password
-		 //String sPassword = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Password);
-		 CMWeb_LoginPage.txtPassword().sendKeys("admin");
+		 String sPassword = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Password);
+		 CMWeb_LoginPage.txtPassword().sendKeys(sPassword);
 		 // reporting
 		 //Log.info("Password is entered in UserName text box" );
 		 
