@@ -9,12 +9,14 @@ import FunctionLibraries.LoginFunction;
 import FunctionLibraries.ManagingRolesFunction;
 import FunctionLibraries.ManagingSiteFunction;
 import ObjectRepository.BaseClass;
+import Utility.Constant;
+import Utility.ExcelUtils;
 import Utility.Utils;
 
 public class AUT_CMWeb_EditSite {
 	public WebDriver driver;
 	private int iTestCaseRow;
-//	private String sTestCaseName;
+	private String sTestCaseName;
 	
 	@BeforeMethod
 	  public void beforeMethod() throws Exception {
@@ -28,7 +30,7 @@ public class AUT_CMWeb_EditSite {
 		  	//sTestCaseName = this.toString();
 		  	// From above method we get long test case name including package and class name etc.
 		  	// The below method will refine your test case name, exactly the name use have used
-	//	  	sTestCaseName = Utils.getTestCaseName(this.toString());
+		  	sTestCaseName = Utils.getTestCaseName(this.toString());
 		  	
 		  	// Start printing the logs and printing the Test Case name
 			//Log.startTestCase(sTestCaseName);
@@ -36,11 +38,11 @@ public class AUT_CMWeb_EditSite {
 			// Setting up the Test Data Excel file using Constants variables
 			// For Constant Variables please see http://www.toolsqa.com/constant-variables/
 			// For setting up Excel for Data driven testing, please see http://www.toolsqa.com/data-driven-testing-excel-poi/
-	//		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Recipe");
+			ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData,"Configuration");
 			
 			// Fetching the Test Case row number from the Test Data Sheet
 			// This row number will be feed to so many functions, to get the relevant data from the Test Data sheet 
-	//		iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,Constant.Col_TestCaseName);
+			iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,Constant.Col_TestCaseName);
 			
 			// Launching the browser, this will take the Browser Type from Test Data Sheet 
 			driver = Utils.OpenBrowser(iTestCaseRow);

@@ -1,6 +1,8 @@
 package FunctionLibraries;
 
 import ObjectRepository.CMWeb_ConfigurationPage;
+import Utility.Constant;
+import Utility.ExcelUtils;
 
 public class ManagingSiteFunction {
 	
@@ -19,17 +21,17 @@ public class ManagingSiteFunction {
 	public static void EditSite(int iTestCaseRow) throws Exception{
 			
 			//search role
-		   // String sSiteName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-			CMWeb_ConfigurationPage.txtSearch().sendKeys("Test_Automation");
+		    String sSiteName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+			CMWeb_ConfigurationPage.txtSearch().sendKeys(sSiteName);
 			CMWeb_ConfigurationPage.btnSearch().click();
 		
 			// Click Edit button
 			CMWeb_ConfigurationPage.btnEdit().click();
 			
 			// change role name
-			//	String sNewSiteName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_NewName);
+			String sNewSiteName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_NewName);
 			CMWeb_ConfigurationPage.txtSiteName().clear();
-			CMWeb_ConfigurationPage.txtSiteName().sendKeys("Test_Lois");		
+			CMWeb_ConfigurationPage.txtSiteName().sendKeys(sNewSiteName);		
 		}
 	
 	// save Site
@@ -46,8 +48,8 @@ public class ManagingSiteFunction {
 	public static void DeleteSite(int iTestCaseRow) throws Exception{
 					
 		//search role
-//		String sSiteName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-		CMWeb_ConfigurationPage.txtSearch().sendKeys("Test_Lois");
+		String sSiteName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+		CMWeb_ConfigurationPage.txtSearch().sendKeys(sSiteName);
 		CMWeb_ConfigurationPage.btnSearch().click();
 				
 		// Click Role Checkbox to delete

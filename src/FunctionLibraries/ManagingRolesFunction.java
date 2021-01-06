@@ -1,6 +1,8 @@
 package FunctionLibraries;
 
 import ObjectRepository.CMWeb_ConfigurationPage;
+import Utility.Constant;
+import Utility.ExcelUtils;
 
 public class ManagingRolesFunction {
 	
@@ -28,8 +30,7 @@ public class ManagingRolesFunction {
 		CMWeb_ConfigurationPage.drpdwnRoleType().sendKeys("Visitor");
 		
 		// Select Role Level
-		// sRoleLevel = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_RoleLevel);
-		String sRoleLevel = "Site";
+		String sRoleLevel = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_RoleLevel);
 		if (sRoleLevel.equals("Property")) {
 			CMWeb_ConfigurationPage.chckboxPropertyLevel().click();		
 		} else if
@@ -59,17 +60,17 @@ public class ManagingRolesFunction {
 	public static void EditRole(int iTestCaseRow) throws Exception{
 			
 			//search role
-		   // String sRoleName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-			CMWeb_ConfigurationPage.txtSearch().sendKeys("Test_Automation");
+		    String sRoleName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+			CMWeb_ConfigurationPage.txtSearch().sendKeys(sRoleName);
 			CMWeb_ConfigurationPage.btnSearch().click();
 		
 			// Click Edit button
 			CMWeb_ConfigurationPage.btnEdit().click();
 			
 			// change role name
-			//	String sNewRoleName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_NewName);
+			String sNewRoleName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_NewName);
 			CMWeb_ConfigurationPage.txtRoleName().clear();
-			CMWeb_ConfigurationPage.txtRoleName().sendKeys("Test_Lois");
+			CMWeb_ConfigurationPage.txtRoleName().sendKeys(sNewRoleName);
 			
 		}
 	
@@ -84,8 +85,8 @@ public class ManagingRolesFunction {
 	public static void DeleteRole(int iTestCaseRow) throws Exception{
 				
 			//search role
-//			String sRoleName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-			CMWeb_ConfigurationPage.txtSearch().sendKeys("Test_Lois");
+			String sRoleName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+			CMWeb_ConfigurationPage.txtSearch().sendKeys(sRoleName);
 			CMWeb_ConfigurationPage.btnSearch().click();
 			
 			// Click Role Checkbox to delete
