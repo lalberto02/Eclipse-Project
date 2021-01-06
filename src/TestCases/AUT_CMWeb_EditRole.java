@@ -56,7 +56,7 @@ public class AUT_CMWeb_EditRole {
 		//UserLogin
 		LoginFunction.Execute(iTestCaseRow);
 		
-		// Add Role
+		// Edit Role -  search specific role thet change role name
 		ManagingRolesFunction.GoToConfiguration(iTestCaseRow);
 		ManagingRolesFunction.GoToRolesTab(iTestCaseRow);
 		ManagingRolesFunction.EditRole(iTestCaseRow);

@@ -56,7 +56,7 @@ public class AUT_CMWeb_DeleteRole {
 		//UserLogin
 		LoginFunction.Execute(iTestCaseRow);
 		
-		// Add Role
+		// Delete Role -  search specific role to delete
 		ManagingRolesFunction.GoToConfiguration(iTestCaseRow);
 		ManagingRolesFunction.GoToRolesTab(iTestCaseRow);
 		ManagingRolesFunction.DeleteRole(iTestCaseRow);
