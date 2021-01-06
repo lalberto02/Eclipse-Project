@@ -72,6 +72,18 @@ public class ManagingRolesFunction {
 			CMWeb_ConfigurationPage.txtRoleName().clear();
 			CMWeb_ConfigurationPage.txtRoleName().sendKeys(sNewRoleName);
 			
+			// Select Role Level
+			String sRoleLevel = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_RoleLevel);
+			if (sRoleLevel.equals("Property")) {
+				CMWeb_ConfigurationPage.chckboxPropertyLevel().click();		
+			} else if
+				(sRoleLevel.equals("Site")) {
+				CMWeb_ConfigurationPage.chckboxSiteLevel().click();
+			} else if
+				(sRoleLevel.equals("Basic")) {
+				CMWeb_ConfigurationPage.chckboxBasicLevel().click();
+			} 
+			
 		}
 	
 	// Clear Search
