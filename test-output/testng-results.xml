@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-06T14:08:32 SGT" name="Default suite" finished-at="2021-01-06T14:08:54 SGT" duration-ms="21787">
+  <suite started-at="2021-01-06T14:33:17 SGT" name="Default suite" finished-at="2021-01-06T14:33:33 SGT" duration-ms="16463">
     <groups>
     </groups>
-    <test started-at="2021-01-06T14:08:32 SGT" name="Default test" finished-at="2021-01-06T14:08:54 SGT" duration-ms="21787">
-      <class name="TestCases.AUT_CMWeb_AddRole">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@2df9b86]" started-at="2021-01-06T14:08:32 SGT" name="beforeMethod" finished-at="2021-01-06T14:08:43 SGT" duration-ms="10821" status="PASS">
+    <test started-at="2021-01-06T14:33:17 SGT" name="Default test" finished-at="2021-01-06T14:33:33 SGT" duration-ms="16463">
+      <class name="TestCases.AUT_CMWeb_SearchMerchandise">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.AUT_CMWeb_SearchMerchandise@4de4b452]" started-at="2021-01-06T14:33:17 SGT" name="beforeMethod" finished-at="2021-01-06T14:33:28 SGT" duration-ms="11764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="main()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@2df9b86]" started-at="2021-01-06T14:08:43 SGT" name="main" finished-at="2021-01-06T14:08:54 SGT" duration-ms="10886" status="PASS">
+        <test-method signature="main()[pri:0, instance:TestCases.AUT_CMWeb_SearchMerchandise@4de4b452]" started-at="2021-01-06T14:33:28 SGT" name="main" finished-at="2021-01-06T14:33:33 SGT" duration-ms="4631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@2df9b86]" started-at="2021-01-06T14:08:54 SGT" name="afterMethod" finished-at="2021-01-06T14:08:54 SGT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.AUT_CMWeb_SearchMerchandise@4de4b452]" started-at="2021-01-06T14:33:33 SGT" name="afterMethod" finished-at="2021-01-06T14:33:33 SGT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- TestCases.AUT_CMWeb_AddRole -->
+      </class> <!-- TestCases.AUT_CMWeb_SearchMerchandise -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
