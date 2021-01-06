@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-06T15:49:20 SGT" name="Default suite" finished-at="2021-01-06T15:49:39 SGT" duration-ms="19012">
+  <suite started-at="2021-01-06T15:51:04 SGT" name="Default suite" finished-at="2021-01-06T15:51:23 SGT" duration-ms="19538">
     <groups>
     </groups>
-    <test started-at="2021-01-06T15:49:20 SGT" name="Default test" finished-at="2021-01-06T15:49:39 SGT" duration-ms="19012">
+    <test started-at="2021-01-06T15:51:04 SGT" name="Default test" finished-at="2021-01-06T15:51:23 SGT" duration-ms="19538">
       <class name="TestCases.AUT_CMWeb_AddRole">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@4de4b452]" started-at="2021-01-06T15:49:20 SGT" name="beforeMethod" finished-at="2021-01-06T15:49:29 SGT" duration-ms="9138" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@4de4b452]" started-at="2021-01-06T15:51:04 SGT" name="beforeMethod" finished-at="2021-01-06T15:51:14 SGT" duration-ms="9739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="main()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@4de4b452]" started-at="2021-01-06T15:49:29 SGT" name="main" finished-at="2021-01-06T15:49:39 SGT" duration-ms="9833" status="FAIL">
+        <test-method signature="main()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@4de4b452]" started-at="2021-01-06T15:51:14 SGT" name="main" finished-at="2021-01-06T15:51:23 SGT" duration-ms="9741" status="FAIL">
           <exception class="org.openqa.selenium.NoAlertPresentException">
             <message>
               <![CDATA[no such alert
@@ -19,8 +19,8 @@
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WORKSTATION-40', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\LOIS~1.ALB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56239}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f1cdcecbeb06a2900a42b87d5fccbf27]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\LOIS~1.ALB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 42b639eeb01d11eef0388ba582ecef10]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
@@ -28,8 +28,8 @@ Session ID: f1cdcecbeb06a2900a42b87d5fccbf27]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WORKSTATION-40', ip: '192.168.1.25', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\LOIS~1.ALB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56239}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f1cdcecbeb06a2900a42b87d5fccbf27
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\LOIS~1.ALB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 42b639eeb01d11eef0388ba582ecef10
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -79,7 +79,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@4de4b452]" started-at="2021-01-06T15:49:39 SGT" name="afterMethod" finished-at="2021-01-06T15:49:39 SGT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.AUT_CMWeb_AddRole@4de4b452]" started-at="2021-01-06T15:51:23 SGT" name="afterMethod" finished-at="2021-01-06T15:51:23 SGT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
