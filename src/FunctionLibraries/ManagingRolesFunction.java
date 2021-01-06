@@ -22,12 +22,12 @@ public class ManagingRolesFunction {
 		CMWeb_ConfigurationPage.btnNew().click();
 		
 		// Input Role Name
-		//	String sRoleName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-		CMWeb_ConfigurationPage.txtRoleName().sendKeys("Test_Lois");
+		String sRoleName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+		CMWeb_ConfigurationPage.txtRoleName().sendKeys(sRoleName);
 		
 		// Select Role Type
-		//	String sRoleType = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_RoleType);
-		CMWeb_ConfigurationPage.drpdwnRoleType().sendKeys("Visitor");
+		String sRoleType = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_RoleType);
+		CMWeb_ConfigurationPage.drpdwnRoleType().sendKeys(sRoleType);
 		
 		// Select Role Level
 		String sRoleLevel = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_RoleLevel);
