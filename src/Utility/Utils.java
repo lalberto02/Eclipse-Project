@@ -24,23 +24,23 @@ public class Utils {
 		String sURL;
 		String sBrowserName;
 		
-		//sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
-		//if(sBrowserName.equals("Chrome")){
-			System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
+		if(sBrowserName.equals("Chrome")){
+			System.setProperty("webdriver.chrome.driver","C:\\Browser driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 			//Log.info("New driver instantiated");
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		    //Log.info("Implicit wait applied on the driver for 10 seconds");
-		    //sURL = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_URL);
-		    driver.get(Constant.URL);
+		    sURL = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_URL);
+		    driver.get(sURL);
 		    driver.manage().window().maximize();
 		    Thread.sleep(1000);
 		    //Log.info("Web application launched successfully");
-		/*}
+		}
 		
 		else if
 			(sBrowserName.equals("Edge")) {
-			System.setProperty("webdriver.edge.driver","C:\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver","C:\\Browser driver\\msedgedriver.exe");
 			driver = new EdgeDriver();
 			//Log.info("New driver instantiated");
 		    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -50,7 +50,7 @@ public class Utils {
 		    driver.manage().window().maximize();
 		    Thread.sleep(1000);
 		    //Log.info("Web application launched successfully");
-			}*/
+			}
 		
 		return driver;
 	}
