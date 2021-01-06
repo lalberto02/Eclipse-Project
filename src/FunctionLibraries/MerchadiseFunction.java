@@ -1,8 +1,8 @@
 package FunctionLibraries;
 
 import ObjectRepository.CMWeb_MerchandisePage;
-//import Utility.Constant;
-//import Utility.ExcelUtils;
+import Utility.Constant;
+import Utility.ExcelUtils;
 
 public class MerchadiseFunction {
 
@@ -114,8 +114,8 @@ public class MerchadiseFunction {
 		
 		// click list button
 		CMWeb_MerchandisePage.btnList().click();
-	//	String sMerchName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
-		CMWeb_MerchandisePage.txtSearchMerch().sendKeys("EGSTest_1218");
+		String sMerchName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Name);
+		CMWeb_MerchandisePage.txtSearchMerch().sendKeys(sMerchName);
 		CMWeb_MerchandisePage.drpdownSearchCondi().sendKeys("and");
 		CMWeb_MerchandisePage.btnSearchMerch().click();
 		
