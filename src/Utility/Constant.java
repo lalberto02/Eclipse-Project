@@ -5,7 +5,7 @@ package Utility;
 
 	public class Constant {  
 		public static final String URL = "http://va-server02/CalcmenuWeb_Template_V91/index.aspx";
-		public static final String Path_TestData = "C:\\Users\\lois.alberto\\git\\Eclipse-Project\\AutomationTesting\\src\\TestData";
+		public static final String Path_TestData = "C:\\Users\\lois.alberto\\git\\Eclipse-Project\\AutomationTesting\\src\\TestData\\";
 		public static final String File_TestData = "Automation_CMWeb_TestData.xlsx";
 		
 		//Test Data Sheet Columns
@@ -37,6 +37,11 @@ package Utility;
 		public static final int Col_User = 10;
 		public static final int Col_Pass = 11;
 		public static final int Col_Parent = 5;
+		public static final int Col_English = 6;
+		public static final int Col_French = 7;
+		public static final int Col_German = 8;
+		public static final int Col_Italian = 9;
+		public static final int Col_Sharing = 10;
 		public static final String Path_ScreenShot = "C:\\Users\\lois.alberto\\eclipse-workspace\\Test\\src\\TestEvidence";
 	}
 

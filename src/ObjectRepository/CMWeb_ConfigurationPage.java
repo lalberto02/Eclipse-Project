@@ -25,8 +25,7 @@ public class CMWeb_ConfigurationPage extends BaseClass {
     	} catch (Exception e) {
     		throw(e);
     	}
-    	return Element;
-    	
+    	return Element;	
     }
     
     // system tab
@@ -59,6 +58,37 @@ public class CMWeb_ConfigurationPage extends BaseClass {
     	return Element;
     }
     
+    // Recipe tab
+    public static WebElement btnRecipe() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		driver.switchTo().defaultContent();
+    		WebElement frame  = driver.findElement(By.name("main"));
+	    	driver.switchTo().frame(frame);
+    		Element = driver.findElement(By.xpath("//*[@id=\"ctl00_cphPageContent_mnu_mnuMainn3\"]/table/tbody/tr/td/a"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+    // Menu tab
+    public static WebElement btnMenu() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		driver.switchTo().defaultContent();
+    		WebElement frame  = driver.findElement(By.name("main"));
+	    	driver.switchTo().frame(frame);
+    		Element = driver.findElement(By.xpath("//*[@id=\"ctl00_cphPageContent_mnu_mnuMainn4\"]/table/tbody/tr/td/a"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+ 
     // account tab
     public static WebElement btnAccount() throws Exception {
     	Element = null;
@@ -264,6 +294,66 @@ public class CMWeb_ConfigurationPage extends BaseClass {
     	    WebElement frame  = driver.findElement(By.id("main"));
     	    	driver.switchTo().frame(frame);*/
     	    	Element = driver.findElement(By.xpath("//*[@id=\"managetplrow2\"]/div[2]/div/div[1]/div/div/div/select"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+    // txtEnglish
+    public static WebElement txtEnglish() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		/*driver.switchTo().defaultContent();
+    	    WebElement frame  = driver.findElement(By.id("main"));
+    	    	driver.switchTo().frame(frame);*/
+    	    	Element = driver.findElement(By.xpath("//*[@id=\"managetplrow2\"]/div[2]/div/div[2]/div[1]/div/input"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+    // txtFrench
+    public static WebElement txtFrench() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		/*driver.switchTo().defaultContent();
+    	    WebElement frame  = driver.findElement(By.id("main"));
+    	    	driver.switchTo().frame(frame);*/
+    	    	Element = driver.findElement(By.xpath("//*[@id=\"managetplrow2\"]/div[2]/div/div[2]/div[2]/div/input"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+    // txtGerman
+    public static WebElement txtGerman() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		/*driver.switchTo().defaultContent();
+    	    WebElement frame  = driver.findElement(By.id("main"));
+    	    	driver.switchTo().frame(frame);*/
+    	    	Element = driver.findElement(By.xpath("//*[@id=\"managetplrow2\"]/div[2]/div/div[2]/div[3]/div/input"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+    // txtItalian
+    public static WebElement txtItalian() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		/*driver.switchTo().defaultContent();
+    	    WebElement frame  = driver.findElement(By.id("main"));
+    	    	driver.switchTo().frame(frame);*/
+    	    	Element = driver.findElement(By.xpath("//*[@id=\"managetplrow2\"]/div[2]/div/div[2]/div[4]/div/input"));
     	} catch (Exception e) {
     		throw(e);
     	}
@@ -476,6 +566,36 @@ public class CMWeb_ConfigurationPage extends BaseClass {
     	return Element;
     }
     
+    // txtSearchKeyword
+    public static WebElement txtSearchKeyword() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		driver.switchTo().defaultContent();
+    	    WebElement frame  = driver.findElement(By.id("main"));
+    	    	driver.switchTo().frame(frame).switchTo().frame("ctl00_cphPageContent_configframe");
+    	    	Element = driver.findElement(By.xpath("//*[@id=\"managetplclearfix2\"]/input"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+    // Search Keyword Button
+    public static WebElement btnSearchKeyword() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		/*driver.switchTo().defaultContent();
+    	    WebElement frame  = driver.findElement(By.id("main"));
+    	    	driver.switchTo().frame(frame);*/
+    	    	Element = driver.findElement(By.xpath("//*[@id=\"managetplclearfix2\"]/button[1]"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
     // Search Button
     public static WebElement btnSearch() throws Exception {
     	Element = null;
@@ -515,6 +635,21 @@ public class CMWeb_ConfigurationPage extends BaseClass {
     	    WebElement frame  = driver.findElement(By.id("main"));
     	    	driver.switchTo().frame(frame);*/
     	    	Element = driver.findElement(By.xpath("//*[@id=\"ctl00_cphPageContent_ctl00_Grid_ctl03_chkSelect\"]"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+    // keyword checkbox
+    public static WebElement chckboxKeyword() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		/*driver.switchTo().defaultContent();
+    	    WebElement frame  = driver.findElement(By.id("main"));
+    	    	driver.switchTo().frame(frame);*/
+    	    	Element = driver.findElement(By.xpath("//*[@id=\"manageOptions\"]/div/div[4]/div/div/div[2]/div/ul/li/span/input"));
     	} catch (Exception e) {
     		throw(e);
     	}
@@ -596,14 +731,29 @@ public class CMWeb_ConfigurationPage extends BaseClass {
     	return Element;
     }
     
-    // deactivate Button
-    public static WebElement btnDeactivate() throws Exception {
+    // delete keyword Button
+    public static WebElement btnDeleteKeyword() throws Exception {
     	Element = null;
     	try {
     		// change frame
     		/*driver.switchTo().defaultContent();
     	    WebElement frame  = driver.findElement(By.id("main"));
     	    	driver.switchTo().frame(frame);*/
+    	    	Element = driver.findElement(By.xpath("//*[@id=\"managetplclearfix\"]/span[3]/a"));
+    	} catch (Exception e) {
+    		throw(e);
+    	}
+    	return Element;
+    }
+    
+    // deactivate Button
+    public static WebElement btnDeactivate() throws Exception {
+    	Element = null;
+    	try {
+    		// change frame
+    		driver.switchTo().defaultContent();
+    	    WebElement frame  = driver.findElement(By.id("main"));
+    	    	driver.switchTo().frame(frame).switchTo().frame("ctl00_cphPageContent_configframe");
     	    	Element = driver.findElement(By.xpath("//*[@id=\"ctl00_cphPageContent_ctl00_ucMenu_ucCBtnDeactivate_lnkBtn\"]"));
     	} catch (Exception e) {
     		throw(e);
